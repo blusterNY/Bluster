@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bluster</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="bluster.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript">
+		function randomlinks(){
+    		var myrandom=Math.round(Math.random()*7)
+    			var links=new Array()
+    			links[0]="shuffle1.html"
+    			links[1]="index.html"
+    			links[2]="shuffle3.html"
+    			links[3]="shuffle4.html"
+    			links[4]="shuffle5.html"
+    			links[5]="shuffle6.html"
+    			links[6]="shuffle7.html"
+    			links[7]="shuffle8.html"
+    		window.location=links[myrandom]
+
+			}	
+	</script>
+
+	<form>
+		<input type="button" value="hello" onClick="randomlinks()">
+
+	<style type="text/css">
+
+		input {
+			z-index: 22;
+			position: absolute;
+   			top: 2%;
+			left: 2%;
+			background-color: transparent;
+			border: none;
+			color: transparent;
+			height: 30px;
+			outline: none;
+		}
+
+		input:hover {
+			cursor: pointer;
+		}
+	
+		#ui {
+			padding-top: 10px;
+			position: absolute;
+			text-align: center;
+			background-color: none;
+ 			text-align: center;
+  			width: 225px;
+  			height: 375px;
+  			border: 1px solid #ffffff;
+  			line-height: 1.5;
+  			margin-bottom: 5px;
+			top: 150px;
+			left: 200px;
+			top: 50%;
+  			left: 54%;
+  			margin: -200px 0 0 -150px;
+		}
+
+		#currentTime {
+			z-index: -1;
+			position: fixed;
+ 			font-size: 15px;
+			position: fixed;
+			font-family: 'helvetica';
+			font-weight: 300;
+			color: white;
+			top: .5%;
+			right: 1%;
+			transform: rotate(0deg);
+		}
+
+		#top-right {
+			position: absolute;
+   			top: 2.5%;
+			left: 2%;
+		} 
+		@media only screen and (max-width: 768px) {
+			#top-right img {
+				width: 30px;;
+			}
+			#ui {
+				left: 57%;
+			}
+		}
+	
+	</style>
+</head>
+
+<body>
+	
+	<div id="top-right">
+		<a href="shuffle3.html"><img src="data/m-01.png" width="30px"></a>
+	</div>
+		
+	<div id="ui">
+		<img src="data/logo-01.png" width="75%"> <p></p>
+		<a href="https://music.apple.com/us/artist/bluster/1540524666"><img src="data/a-01.png" width="45%"></a><p></p><br>
+		<a href="https://open.spotify.com/album/4IxLTxAPMDszRdey7xgVsl?si=d8rQjwrCSkuOik4MKqaeDQ"><img src="data/s-01.png" width="50%"></a> <p></p><br>
+		<a href="https://blusterny.bandcamp.com/album/ep"><img src="data/b-01.png" width="60%"></a> <p></p> 
+		<img src="data/grim-01.png" width="30%">
+	</div>
+	
+	<p id="currentTime"></p>
+	
+	<script src="time.js"></script>
+	
+</body>
+</html>
